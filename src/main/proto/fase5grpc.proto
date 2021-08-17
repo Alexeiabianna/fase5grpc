@@ -1,0 +1,20 @@
+syntax = "proto3";
+
+option java_multiple_files = true;
+option java_package = "br.com.zup";
+option java_outer_classname = "Fase5grpc";
+option objc_class_prefix = "HLW";
+
+package br.com.zup;
+
+service Fase5grpcService {
+  rpc send (Fase5grpcRequest) returns (Fase5grpcReply) {}
+}
+
+message Fase5grpcRequest {
+  string name = 1;
+}
+
+message Fase5grpcReply {
+  string message = 1;
+}
