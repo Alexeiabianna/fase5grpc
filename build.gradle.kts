@@ -31,6 +31,10 @@ dependencies {
     implementation("javax.annotation:javax.annotation-api")
     implementation("org.jetbrains.kotlin:kotlin-reflect:${kotlinVersion}")
     implementation("org.jetbrains.kotlin:kotlin-stdlib-jdk8:${kotlinVersion}")
+    //gRPC
+    implementation("io.grpc:grpc-kotlin-stub:0.1.1")
+    implementation("org.jetbrains.kotlinx:kotlinx-coroutines-core:1.3.2")
+
     runtimeOnly("ch.qos.logback:logback-classic")
     implementation("io.micronaut:micronaut-validation")
 
